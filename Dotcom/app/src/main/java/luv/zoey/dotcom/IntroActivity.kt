@@ -17,7 +17,6 @@ class IntroActivity : AppCompatActivity() {
     private var runnable: Runnable? = null
     private var anim_fadein : Animation? = null
 
-
     override fun onStart() {
         super.onStart()
         anim_fadein= AnimationUtils.loadAnimation(this, R.anim.fadein)
