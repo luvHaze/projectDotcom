@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/imgview_logo"
         android:supportsRtl="true"
         android:theme="@style/myTheme">
+        <activity android:name=".MainMenuActivity"></activity>
         <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
