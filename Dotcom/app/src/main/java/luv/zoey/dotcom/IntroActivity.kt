@@ -32,7 +32,7 @@ class IntroActivity : AppCompatActivity() {
     fun startApp() {
 
         runnable = Runnable {
-            var intent = Intent(applicationContext, MainMenuActivity::class.java)
+            var intent = Intent(applicationContext, LoginActivity::class.java)
             startActivity(intent)
         }
         handler = Handler()
