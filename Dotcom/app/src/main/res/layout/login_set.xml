@@ -4,17 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00000000">
+    android:background="#000000">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="193dp"
-        android:layout_height="122dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dotcom" />
 
+    <ImageView
+        android:id="@+id/icn_ID"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ic_cloud_queue_black_24dp"
+        android:tint="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <EditText
+        android:id="@+id/loginActivity_ID_EditText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#ffffff"
+        android:hint="ID"
+        android:textAlignment="textStart"
+        android:textColorHint="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/icn_ID"
+        app:layout_constraintTop_toTopOf="@+id/icn_ID" />
+
+    <ImageView
+        android:id="@+id/icn_PW"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:padding="3dp"
+        android:src="@drawable/ic_wb_sunny_black_24dp"
+        android:tint="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/icn_ID"
+        app:layout_constraintTop_toBottomOf="@+id/icn_ID" />
+
+    <EditText
+        android:id="@+id/loginActivity_PW_EditText"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#ffffff"
+        android:hint="PW"
+        android:textAlignment="textStart"
+        android:textColorHint="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/icn_PW"
+        app:layout_constraintTop_toTopOf="@+id/icn_PW" />
+
+    <Button
+        android:id="@+id/login_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:background="#00ffffff"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginActivity_PW_EditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
