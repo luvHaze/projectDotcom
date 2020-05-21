@@ -7,7 +7,39 @@
     android:background="@drawable/background_casesharing"
     tools:context=".fragment.Fragment_CaseSharing">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/ic_beta"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/notosanscjkkrblack"
+        android:includeFontPadding="false"
+        android:text="Case Sharing"
+        android:textColor="#ffffff"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/notosanscjkkrdemilight"
+        android:includeFontPadding="false"
+        android:text="@string/caseshare_explain"
+        android:textAlignment="viewStart"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

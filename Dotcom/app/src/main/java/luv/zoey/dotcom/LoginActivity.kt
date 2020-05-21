@@ -32,6 +32,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        //TODO ExoPlayer 로 교체
+
          mVideoView = findViewById(R.id.videoView)
 
         val uri = Uri.parse("android.resource://${packageName}/${R.raw.vi0}")

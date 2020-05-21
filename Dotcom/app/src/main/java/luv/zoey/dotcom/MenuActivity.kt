@@ -1,9 +1,11 @@
 package luv.zoey.dotcom
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
+import android.view.MenuItem
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.FragmentPagerAdapter
 import com.google.android.material.tabs.TabLayout
@@ -28,13 +30,12 @@ class MenuActivity : AppCompatActivity() {
     private fun init() {
         // [액션바] 초기화 단계
         setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
-        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-
-
-
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true)
+            setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp)
+            setDisplayShowTitleEnabled(false)
+        }
         // [페이지뷰] 초기화 단계
         fragmentAdapter.apply {
             addItem(Fragment_Matching())
@@ -46,13 +47,19 @@ class MenuActivity : AppCompatActivity() {
         mainMenu_Indicator.setupWithViewPager(mainMenu_ViewPager, true)
     }
 
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         var menuInflater = menuInflater
+        menuInflater.inflate(R.menu.toolbar_menu,menu)
 
-
-
+        return true
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
+        //TODO 나의 수리현황으로 이동
+        return true
+    }
 }
