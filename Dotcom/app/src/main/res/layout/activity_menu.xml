@@ -20,17 +20,6 @@
             android:layout_height="match_parent"
             >
 
-            <!--<Button
-                android:id="@+id/nevigation_button"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/ic_menu_black_24dp"
-                android:gravity="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />-->
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +55,6 @@
         app:tabBackground="@drawable/tab_selector"
         app:tabGravity="center"
         app:tabIndicatorGravity="bottom"
-        app:tabIndicatorHeight="0dp">
+        app:tabIndicatorHeight="0dp"/>
 
-    </com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

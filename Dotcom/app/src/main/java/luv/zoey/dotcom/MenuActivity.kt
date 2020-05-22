@@ -47,8 +47,6 @@ class MenuActivity : AppCompatActivity() {
         mainMenu_Indicator.setupWithViewPager(mainMenu_ViewPager, true)
     }
 
-
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         var menuInflater = menuInflater
