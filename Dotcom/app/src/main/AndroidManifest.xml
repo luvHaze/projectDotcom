@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/imgview_logo"
         android:supportsRtl="true"
         android:theme="@style/myTheme">
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MenuActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

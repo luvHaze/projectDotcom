@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myEstimate_navMenu"
+        android:title="My 견적"/>
+    <item
+        android:id="@+id/myRepair_navMenu"
+        android:title="나의수리현황"/>
+    <item
+        android:id="@+id/selfCheck_navMenu"
+        android:title="자가진단"/>
+
+
+</menu>
