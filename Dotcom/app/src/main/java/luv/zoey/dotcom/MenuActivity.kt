@@ -3,10 +3,7 @@ package luv.zoey.dotcom
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
+import android.view.*
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.FragmentPagerAdapter
@@ -55,6 +52,7 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
 
+
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -77,4 +75,5 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         return true
     }
+
 }

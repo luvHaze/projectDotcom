@@ -63,6 +63,7 @@
         app:headerLayout="@layout/navlayout_header"
         app:menu="@menu/nav_menu"
         android:layout_gravity="left"
+        app:itemTextAppearance="@style/nav_item_font"
         />
 
 </androidx.drawerlayout.widget.DrawerLayout>
