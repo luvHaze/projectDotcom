@@ -102,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
 
         val rawDataSource = RawResourceDataSource(this)
 
-        rawDataSource.open(DataSpec(RawResourceDataSource.buildRawResourceUri(R.raw.vi0)))
+        rawDataSource.open(DataSpec(RawResourceDataSource.buildRawResourceUri(R.raw.vi2)))
 
         return ProgressiveMediaSource.Factory(dataSourceFactory)
             .createMediaSource(rawDataSource.uri)
