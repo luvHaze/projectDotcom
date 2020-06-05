@@ -1,7 +1,6 @@
 package luv.zoey.dotcom.Model
 
 data class Estimate(
-
     var EST_ID : Int,
     var EST_State : String,
     var EST_Title : String,

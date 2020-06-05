@@ -27,7 +27,6 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         init()
     }
-
     private fun init() {
         // [액션바] 초기화 단계
         setSupportActionBar(toolbar)
@@ -35,7 +34,6 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toolbar_menu.setOnClickListener {
             drawer_parent.openDrawer(Gravity.LEFT)
         }
-
         // [페이지뷰] 초기화 단계
         fragmentAdapter.apply {
             addItem(Fragment_Matching())
@@ -50,9 +48,6 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         navigationView.setOnClickListener {
             Toast.makeText(this, "Clicked", Toast.LENGTH_LONG).show()
         }
-
-
-
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -72,7 +67,6 @@ class MenuActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 return true
             }
         }
-
         return true
     }
 
